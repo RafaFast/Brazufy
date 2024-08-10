@@ -1,4 +1,7 @@
 import os
-from backend.env_keys import *
+from dotenv import load_dotenv
 
 
+load_dotenv()
+
+chave = os.getenv('SECRET_KEY')
